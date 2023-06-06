@@ -1,0 +1,212 @@
+body {
+  background-color: #646165;
+  font-family: "Inter", sans-serif;
+}
+header {
+  margin-left: 5rem;
+  position: absolute;
+  width: 10%;
+}
+
+/* Estilo main */
+main {
+  height: 37.5rem;
+  margin: 2% 5%;
+  align-items: center;
+}
+div {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.entrada {
+  width: 70%;
+  height: 100%;
+  padding: 8% 5% 0;
+  margin: auto;
+  text-align: left;
+}
+.entrada textarea {
+  background-color: #646165;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  border: 0px;
+  width: 100%;
+  height: 80%;
+}
+::placeholder {
+  color: #d6d6d6;
+}
+.alerta {
+  font-weight: normal;
+  font-size: 0.8rem;
+  color: #d6d6d6;
+}
+button {
+  font-size: 1.2rem;
+  width: 45%;
+  padding: 1rem;
+  border-radius: 15px;
+  color: #d6d6d6;
+  border: 1px solid #141414;
+}
+.cripto {
+  margin: 2% 2% 2% 0;
+  color: #b8b8b8;
+  background-color: #141414;
+}
+.descripto {
+  margin: 2% 0 2% 2%;
+  background-color: #707070;
+}
+
+button:hover {
+  border: 3px solid #141414;
+  /* font-weight: bolder; */
+  /* box-shadow: -2px 5px 10px #6b6f74; */
+  cursor: pointer;
+}
+button:active {
+  border: 2px solid #141414;
+  font-weight: normal;
+  box-shadow: none;
+}
+.saida {
+  background-color: #999999;
+  margin: 0 2%;
+  width: 25%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: -1px 5px 5px #999999;
+}
+.semMensagem {
+  height: 100%;
+  padding: 35% 2%;
+  align-self: center;
+}
+.saida img {
+  width: 80%;
+}
+.saida h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: bold;
+  color: #343a40;
+}
+.saida p {
+  margin: 1rem 0 0;
+  line-height: 1.5rem;
+  color: #343a40;
+}
+.comMensagem {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 15% 10%;
+  font-size: 1.5rem;
+  text-align: justify;
+  color: white;
+}
+.copiar {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  width: 80%;
+  background-color: #707070;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1100px) {
+  header {
+    position: relative;
+    display: block;
+    width: 10%;
+    margin: 5% 0;
+  }
+  main {
+    height: auto;
+    margin: 2%;
+  }
+  div {
+    display: block;
+  }
+  .logo {
+    margin-left: 70px;
+  }
+  .entrada {
+    aspect-ratio: 2/1;
+    width: 100%;
+    padding: 5% 5% 0;
+  }
+  .entrada textarea {
+    height: 75%;
+  }
+  button {
+    width: 46%;
+  }
+  .saida {
+    margin: 2%;
+    width: 96%;
+    height: auto;
+  }
+  .semMensagem {
+    height: 100%;
+    padding: 2%;
+  }
+  .saida img {
+    display: none;
+  }
+  .comMensagem {
+    padding: 2% 2rem 6rem 2rem;
+  }
+  .copiar {
+    bottom: 10%;
+  }
+  .contato {
+    width: auto;
+  }
+}
+/* celular */
+@media screen and (max-width: 480px) {
+  .logo {
+    margin-left: 150px;
+  }
+  .entrada {
+    aspect-ratio: 1/1;
+  }
+  button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+  }
+  .cripto {
+    margin: 5% 0;
+  }
+  .descripto {
+    margin: 5% 0;
+  }
+  .saida {
+    margin: 10% 2%;
+  }
+  .semMensagem {
+    padding: 2rem;
+  }
+  .saida img {
+    display: none;
+  }
+  .comMensagem {
+    padding: 2% 2rem 6rem 2rem;
+  }
+}
